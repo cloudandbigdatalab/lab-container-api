@@ -28,7 +28,6 @@ I found several services that *kind of* relate to this but aren't exaclty what w
 - Container Engine
 - sloppy.io
 - chef
-- 
 
 # Phase 2: Script Through Flow
 Going to setup the flow in shell scripts.
