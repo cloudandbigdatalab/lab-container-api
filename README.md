@@ -17,3 +17,14 @@ A UI implementation would look like:
 ## Phase 1: Discovery
 - look at what's currenlty available / see if people have already done it
 - if they have, is it open source? and is there a meaningful, different way to do it? is there room for improvement?
+
+**Results**  
+I found several services that *kind of* relate to this but aren't exaclty what we're thinking of. Many of them require you to use a CLI. I didn't find any accessbile via a RESTful API. They all seem to manage containers like many services manage VMs. But nothing that just returns a login for you. List of services I looked at:
+- Tutum
+- Orchard
+- dotCloud
+- StackDock
+- Quay.io
+- Container Engine
+- sloppy.io
+- chef
