@@ -31,3 +31,9 @@ I found several services that *kind of* relate to this but aren't exaclty what w
 
 # Phase 2: Script Through Flow
 Going to setup the flow in shell scripts.
+
+# References
+https://docs.docker.com
+https://github.com/koalalorenzo/python-digitalocean
+https://docs.python.org/
+https://developers.digitalocean.com
