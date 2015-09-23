@@ -1,2 +1,0 @@
-Error creating machine: Machine lab-container-api already exists
-You will want to check the provider to make sure the machine and associated resources were properly removed.
