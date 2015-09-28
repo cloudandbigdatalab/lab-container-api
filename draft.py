@@ -25,6 +25,3 @@ def delete():
         print output
     except CalledProcessError as error:
         print error.output
-
-create(os.environ['DO_KEY'])
-delete()
