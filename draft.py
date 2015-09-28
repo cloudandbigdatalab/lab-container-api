@@ -1,7 +1,7 @@
 from subprocess import check_output, CalledProcessError, STDOUT
 import os
 
-def connect(token):
+def create(token):
   try:
       output = check_output([
       "docker-machine",
@@ -15,4 +15,16 @@ def connect(token):
   except CalledProcessError as error:
       print error.output
 
-connect(os.environ['DO_KEY'])
+def delete():
+    try:
+        output = check_output([
+        "docker-machine",
+        "rm",
+        "lab-container-api"
+        ], stderr=STDOUT)
+        print output
+    except CalledProcessError as error:
+        print error.output
+
+create(os.environ['DO_KEY'])
+delete()
