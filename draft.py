@@ -33,6 +33,8 @@ def run(image_name):
         output = check_output([
         "docker",
         "run",
+        "-it",
+        "--rm",
         image_name
         ], stderr=STDOUT)
         print output
