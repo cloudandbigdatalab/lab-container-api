@@ -25,3 +25,14 @@ def delete():
         print output
     except CalledProcessError as error:
         print error.output
+
+def run(image_name):
+    try:
+        output = check_output([
+        "docker",
+        "run",
+        image_name
+        ], stderr=STDOUT)
+        print output
+    except CalledProcessError as error:
+        print error.output
