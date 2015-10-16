@@ -31,17 +31,15 @@ def delete():
 
 def run(image_name):
     try:
-        machine_output = check_output([
+        output = check_output([
         "docker-machine",
         "env",
         "lab-container-api",
         ], stderr=STDOUT)
 
-        regex_splits = re.split('^export\s(\w+)=\"(\w)\"$',
-        machine_output)
-
-        for token in regex_splits:
-            print token+"\n"
+        for line in output.splitlines():
+            if "export" in line:
+                env_vars = re.findall(r"export\s(.+)=\"(.+)\"", line)
 
         """
         output = check_output([

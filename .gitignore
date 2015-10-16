@@ -1,1 +1,4 @@
-debug.txt
+*.pyc
+.DS_Store
+temp.txt
+test.py
